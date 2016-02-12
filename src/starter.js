@@ -20,7 +20,6 @@ window.Hycs.setUp({
     consoleLog: false,
     appFolderUrl: '/portfolio'
     //shallReloadPage: true
-    appFolderUrl: '/portfolio'
 });
 
 function runningNow() {
