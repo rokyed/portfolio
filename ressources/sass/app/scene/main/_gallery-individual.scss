@@ -1,0 +1,73 @@
+@mixin app-scene-main-gallery-individual {
+    .v-show-case-individual {
+        margin: 0 0 40px;
+
+        .v-show-case-individual-title {
+            text-align: center;
+            font-size: 30px;
+            padding: 10px;
+        }
+
+        .v-show-case-individual-container {
+            border-radius: 5px;
+            background: $block-background-color;
+            border: 1px solid $border-color-1;
+            position: relative;
+            overflow: hidden;
+
+            .v-show-case-individual-image {
+                box-sizing: border-box;
+                background-color: $image-background-color;
+                background-size: contain;
+                background-position: center;
+                background-repeat: no-repeat;
+                display: inline-block;
+                cursor: pointer;
+            }
+
+            .v-show-case-individual-content {
+                box-sizing: border-box;
+                padding: 10px;
+                display: inline-block;
+                .v-link {
+                    display: inline-block;
+                    * {
+                        display: inline-block;
+                    }
+                }
+            }
+        }
+    }
+
+    @media (min-width: 600px) {
+        .v-show-case-individual{
+            .v-show-case-individual-container {
+                @include k-flex-direction(row);
+
+                .v-show-case-individual-image {
+                    height: 500px;
+                    @include k-flex(1, 1, auto);
+                }
+                .v-show-case-individual-content {
+                    @include k-flex(0, 0, 300px);
+                }
+            }
+        }
+    }
+
+    @media (max-width: 600px) {
+        .v-show-case-individual{
+            .v-show-case-individual-container {
+                @include k-flex-direction(column);
+
+                .v-show-case-individual-image {
+                    width: 100%;
+                    @include k-flex(0, 0, 200px);
+                }
+                .v-show-case-individual-content {
+                    @include k-flex(1, 1, auto);
+                }
+            }
+        }
+    }
+}

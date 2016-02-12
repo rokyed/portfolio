@@ -1,0 +1,604 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 17, ../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.3/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.3/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.3/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.3/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.3/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.3/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.3/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.3/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.3/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+/*
+* @NOTE Classical
+*/
+/*
+* @NOTE Studio
+*/
+/*
+    $main-background-color: #f9f9ff;
+    $menu-background-color: #ddf;
+    $block-background-color: #f0f0ff;
+    $link-background-color: #F8F6EB;
+    $highlight-background-color: #F8F6EB;
+    $image-background-color: #111;
+    $hover-background-color: rgba(100, 125, 255, 0.7);
+
+
+    $hover-border-color: rgba(100, 125, 255, 0.7);
+    $border-color-1: rgba(0, 0, 0, 0.1);
+    $border-color-2: rgba(0, 0, 0, 0.1);
+    $border-color-3: rgba(255, 255, 255, 0.1);
+
+
+    $font-color-normal: #000;
+    $font-color-bold: #33f;
+    $font-color-highlight: #77c;
+    $font-color-link: #f00;
+    $box-shadow-color-1: rgba(0,0,0,0.05);
+    $box-shadow-color-2: rgba(0,0,0,0.1);
+    $box-shadow-color-3: rgba(0,0,0,0.75);
+
+
+    $gradient-1a: rgba(0,0,0,0);
+    $gradient-1b: rgba(255,255,255,0.03);
+*/
+/* line 9, ../sass/screen.scss */
+body {
+  color: #333;
+}
+
+/* line 2, ../sass/app/_mixins.scss */
+.v-hidden {
+  display: none !important;
+}
+
+/* line 5, ../sass/app/_mixins.scss */
+.v-fontello {
+  font-family: 'fontello';
+}
+
+/* line 9, ../sass/app/_mixins.scss */
+.v-box-shadow-medium {
+  -webkit-box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.75);
+}
+
+/* line 15, ../sass/app/_mixins.scss */
+.v-box-shadow-small {
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+/* line 21, ../sass/app/_mixins.scss */
+.v-box-shadow-xsmall {
+  -webkit-box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.75);
+}
+
+/* line 27, ../sass/app/_mixins.scss */
+.v-flex-container {
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-content: stretch;
+  -ms-flex-line-pack: stretch;
+  align-content: stretch;
+  -webkit-align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+}
+
+/* line 48, ../sass/app/_mixins.scss */
+.v-flex-zero {
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+}
+
+/* line 53, ../sass/app/_mixins.scss */
+.v-flex-one {
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+}
+
+/* line 17, ../sass/app/_core.scss */
+html, body {
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  min-width: 100%;
+  min-height: 100%;
+  max-width: 100%;
+  max-height: 100%;
+  font-family: 'Roboto', sans-serif;
+  background-color: #f8f6eb;
+  color: #10145a;
+}
+
+/* line 33, ../sass/app/_core.scss */
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+/* line 37, ../sass/app/_core.scss */
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.05);
+  border-radius: 2px;
+}
+
+/* line 42, ../sass/app/_core.scss */
+::-webkit-scrollbar-thumb {
+  border-radius: 2px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+}
+
+/* line 2, ../sass/app/scene/_side-bar.scss */
+.v-side-bar {
+  display: block;
+  position: fixed;
+  bottom: 4px;
+  right: 4px;
+  width: auto;
+  max-height: 342px;
+  background-color: #f8f6eb;
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  border-radius: 5px;
+  overflow: hidden;
+  z-index: 10;
+}
+/* line 15, ../sass/app/scene/_side-bar.scss */
+.v-side-bar.v-compact {
+  height: auto !important;
+}
+/* line 18, ../sass/app/scene/_side-bar.scss */
+.v-side-bar.v-compact .v-side-bar-controls {
+  border: none !important;
+}
+/* line 23, ../sass/app/scene/_side-bar.scss */
+.v-side-bar .v-side-bar-controls {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: flex-end;
+  justify-content: flex-end;
+}
+/* line 27, ../sass/app/scene/_side-bar.scss */
+.v-side-bar .v-side-bar-controls .v-side-bar-control-button {
+  font-size: 20px;
+  display: inline-block;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  box-sizing: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.03);
+  border-radius: 5px;
+  position: relative;
+}
+/* line 40, ../sass/app/scene/_side-bar.scss */
+.v-side-bar .v-side-bar-controls .v-side-bar-control-button:hover {
+  background-color: rgba(100, 155, 255, 0.3);
+}
+/* line 45, ../sass/app/scene/_side-bar.scss */
+.v-side-bar .v-side-bar-container {
+  max-width: 160px;
+  min-width: 160px;
+  height: auto;
+  max-height: 300px;
+  overflow: hidden;
+  overflow-y: auto;
+  position: relative;
+  border-radius: 5px;
+}
+/* line 56, ../sass/app/scene/_side-bar.scss */
+.v-side-bar .v-side-bar-container .v-side-bar-item,
+.v-side-bar .v-side-bar-container .v-side-bar-filler {
+  height: 40px;
+  width: 100%;
+  font-size: 20px;
+  line-height: 40px;
+  text-align: center;
+  display: block;
+  cursor: pointer;
+  box-sizing: border-box;
+  border-top: 1px solid rgba(255, 255, 255, 0.6);
+  position: relative;
+}
+/* line 68, ../sass/app/scene/_side-bar.scss */
+.v-side-bar .v-side-bar-container .v-side-bar-item .v-icon,
+.v-side-bar .v-side-bar-container .v-side-bar-filler .v-icon {
+  display: inline-block;
+}
+/* line 72, ../sass/app/scene/_side-bar.scss */
+.v-side-bar .v-side-bar-container .v-side-bar-item .v-link,
+.v-side-bar .v-side-bar-container .v-side-bar-filler .v-link {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: block;
+  background-color: transparent;
+}
+/* line 82, ../sass/app/scene/_side-bar.scss */
+.v-side-bar .v-side-bar-container .v-side-bar-item span,
+.v-side-bar .v-side-bar-container .v-side-bar-filler span {
+  margin: 0 3px;
+}
+/* line 86, ../sass/app/scene/_side-bar.scss */
+.v-side-bar .v-side-bar-container .v-side-bar-item:hover,
+.v-side-bar .v-side-bar-container .v-side-bar-filler:hover {
+  background-color: rgba(100, 155, 255, 0.3);
+}
+/* line 91, ../sass/app/scene/_side-bar.scss */
+.v-side-bar .v-side-bar-container .v-side-bar-filler {
+  height: 20px;
+}
+/* line 93, ../sass/app/scene/_side-bar.scss */
+.v-side-bar .v-side-bar-container .v-side-bar-filler:hover {
+  background-color: transparent;
+}
+
+/* line 2, ../sass/app/_app.scss */
+.v-main-app {
+  width: 100%;
+  height: 100%;
+  min-width: 100%;
+  min-height: 100%;
+  max-width: 100%;
+  max-height: 100%;
+  overflow: hidden;
+  overflow-y: auto;
+  position: relative;
+}
+/* line 13, ../sass/app/_app.scss */
+.v-main-app .v-main-app-container {
+  width: auto;
+  height: auto;
+  margin: 0 50px;
+}
+/* line 18, ../sass/app/_app.scss */
+.v-mobile .v-main-app .v-main-app-container {
+  margin: 10px !important;
+}
+
+/* line 26, ../sass/app/_app.scss */
+.v-link,
+.v-link:link,
+.v-link:visited {
+  color: #37cbe6;
+  text-decoration: none;
+  padding: 3px;
+}
+/* line 31, ../sass/app/_app.scss */
+.v-link span,
+.v-link:link span,
+.v-link:visited span {
+  font-family: 'Roboto';
+}
+/* line 35, ../sass/app/_app.scss */
+.v-link:hover,
+.v-link:link:hover,
+.v-link:visited:hover {
+  background-color: rgba(100, 155, 255, 0.3);
+  border-radius: 5px;
+}
+
+/* line 42, ../sass/app/_app.scss */
+.v-icon {
+  font-family: 'fontello';
+}
+
+/* line 2, ../sass/app/scene/_main-view.scss */
+.v-main-view {
+  width: auto;
+  height: auto;
+}
+/* line 6, ../sass/app/scene/_main-view.scss */
+.v-main-view .v-full-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100% !important;
+  height: 100% !important;
+  min-width: 100% !important;
+  min-height: 100% !important;
+  max-width: 100% !important;
+  max-height: 100% !important;
+  z-index: 100;
+}
+
+/* line 2, ../sass/app/scene/main/_gallery-glimpse.scss */
+.v-show-case-glimpse {
+  margin: 0 0 40px;
+}
+/* line 5, ../sass/app/scene/main/_gallery-glimpse.scss */
+.v-show-case-glimpse .v-show-case-glimpse-title {
+  font-size: 30px;
+  display: block;
+  padding: 10px;
+  text-align: center;
+}
+/* line 11, ../sass/app/scene/main/_gallery-glimpse.scss */
+.v-show-case-glimpse .v-show-case-glimpse-container {
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+/* line 13, ../sass/app/scene/main/_gallery-glimpse.scss */
+.v-show-case-glimpse .v-show-case-glimpse-container .v-show-case-thumb {
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  width: 200px;
+  max-width: 200px;
+  height: 237px;
+  cursor: pointer;
+  border-radius: 5px;
+  overflow: hidden;
+  background-color: white;
+  margin: 3px;
+  -webkit-flex-basis: 220px;
+  flex-basis: 220px;
+}
+/* line 24, ../sass/app/scene/main/_gallery-glimpse.scss */
+.v-show-case-glimpse .v-show-case-glimpse-container .v-show-case-thumb:hover {
+  border-color: rgba(100, 155, 255, 0.3);
+}
+/* line 30, ../sass/app/scene/main/_gallery-glimpse.scss */
+.v-show-case-glimpse .v-show-case-glimpse-container .v-show-case-thumb .v-show-case-thumb-title {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+  text-align: center;
+  padding: 10px;
+}
+/* line 36, ../sass/app/scene/main/_gallery-glimpse.scss */
+.v-show-case-glimpse .v-show-case-glimpse-container .v-show-case-thumb .v-show-case-thumb-container .v-show-case-thumb-image {
+  background-color: #222222;
+  background-image: url("../images/loading.gif");
+  width: 200px;
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* line 2, ../sass/app/scene/main/_gallery-individual.scss */
+.v-show-case-individual {
+  margin: 0 0 40px;
+}
+/* line 5, ../sass/app/scene/main/_gallery-individual.scss */
+.v-show-case-individual .v-show-case-individual-title {
+  text-align: center;
+  font-size: 30px;
+  padding: 10px;
+}
+/* line 11, ../sass/app/scene/main/_gallery-individual.scss */
+.v-show-case-individual .v-show-case-individual-container {
+  border-radius: 5px;
+  background: white;
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  position: relative;
+  overflow: hidden;
+}
+/* line 18, ../sass/app/scene/main/_gallery-individual.scss */
+.v-show-case-individual .v-show-case-individual-container .v-show-case-individual-image {
+  box-sizing: border-box;
+  background-color: #222222;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: inline-block;
+  cursor: pointer;
+}
+/* line 28, ../sass/app/scene/main/_gallery-individual.scss */
+.v-show-case-individual .v-show-case-individual-container .v-show-case-individual-content {
+  box-sizing: border-box;
+  padding: 10px;
+  display: inline-block;
+}
+/* line 32, ../sass/app/scene/main/_gallery-individual.scss */
+.v-show-case-individual .v-show-case-individual-container .v-show-case-individual-content .v-link {
+  display: inline-block;
+}
+/* line 34, ../sass/app/scene/main/_gallery-individual.scss */
+.v-show-case-individual .v-show-case-individual-container .v-show-case-individual-content .v-link * {
+  display: inline-block;
+}
+
+@media (min-width: 600px) {
+  /* line 44, ../sass/app/scene/main/_gallery-individual.scss */
+  .v-show-case-individual .v-show-case-individual-container {
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+  /* line 47, ../sass/app/scene/main/_gallery-individual.scss */
+  .v-show-case-individual .v-show-case-individual-container .v-show-case-individual-image {
+    height: 500px;
+    -webkit-flex-shrink: 1;
+    -ms-flex-shrink: 1;
+    flex-shrink: 1;
+    -webkit-flex-grow: 1;
+    -ms-flex-grow: 1;
+    flex-grow: 1;
+    -webkit-flex-basis: auto;
+    -ms-flex-basis: auto;
+    flex-basis: auto;
+  }
+  /* line 51, ../sass/app/scene/main/_gallery-individual.scss */
+  .v-show-case-individual .v-show-case-individual-container .v-show-case-individual-content {
+    -webkit-flex-shrink: 0;
+    -ms-flex-shrink: 0;
+    flex-shrink: 0;
+    -webkit-flex-grow: 0;
+    -ms-flex-grow: 0;
+    flex-grow: 0;
+    -webkit-flex-basis: 300px;
+    -ms-flex-basis: 300px;
+    flex-basis: 300px;
+  }
+}
+@media (max-width: 600px) {
+  /* line 60, ../sass/app/scene/main/_gallery-individual.scss */
+  .v-show-case-individual .v-show-case-individual-container {
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  /* line 63, ../sass/app/scene/main/_gallery-individual.scss */
+  .v-show-case-individual .v-show-case-individual-container .v-show-case-individual-image {
+    width: 100%;
+    -webkit-flex-shrink: 0;
+    -ms-flex-shrink: 0;
+    flex-shrink: 0;
+    -webkit-flex-grow: 0;
+    -ms-flex-grow: 0;
+    flex-grow: 0;
+    -webkit-flex-basis: 200px;
+    -ms-flex-basis: 200px;
+    flex-basis: 200px;
+  }
+  /* line 67, ../sass/app/scene/main/_gallery-individual.scss */
+  .v-show-case-individual .v-show-case-individual-container .v-show-case-individual-content {
+    -webkit-flex-shrink: 1;
+    -ms-flex-shrink: 1;
+    flex-shrink: 1;
+    -webkit-flex-grow: 1;
+    -ms-flex-grow: 1;
+    flex-grow: 1;
+    -webkit-flex-basis: auto;
+    -ms-flex-basis: auto;
+    flex-basis: auto;
+  }
+}
+/* line 3, ../sass/app/scene/main/_home.scss */
+.v-home-page .v-home-page-title {
+  font-size: 30px;
+  display: block;
+  padding: 10px;
+  text-align: center;
+}
+/* line 9, ../sass/app/scene/main/_home.scss */
+.v-home-page .v-home-page-description {
+  display: block;
+  text-align: center;
+}
+/* line 13, ../sass/app/scene/main/_home.scss */
+.v-home-page .v-me-image {
+  background-size: contain;
+  background-image: url("../images/full/me-compressed.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 500px;
+}
+
+/* line 2, ../sass/app/scene/main/_article.scss */
+.v-article {
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  background: white;
+  border-radius: 5px;
+  margin: 10px 0 40px;
+}
+/* line 8, ../sass/app/scene/main/_article.scss */
+.v-article .v-article-title {
+  font-size: 30px;
+  display: block;
+  padding: 10px;
+  text-align: center;
+}
+/* line 14, ../sass/app/scene/main/_article.scss */
+.v-article .v-article-description {
+  border-top: 1px solid rgba(0, 0, 0, 0.06);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+  padding: 10px;
+  display: block;
+  text-align: left;
+}
+/* line 20, ../sass/app/scene/main/_article.scss */
+.v-article .v-article-description b {
+  color: #eedd99;
+  margin: 0 3px;
+}
+/* line 25, ../sass/app/scene/main/_article.scss */
+.v-article .v-article-created-on {
+  font-size: 8px;
+  display: block;
+  padding: 10px;
+  text-align: center;
+}

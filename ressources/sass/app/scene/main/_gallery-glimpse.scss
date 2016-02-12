@@ -1,0 +1,49 @@
+@mixin app-scene-main-gallery-glipmse {
+    .v-show-case-glimpse {
+        margin: 0 0 40px;
+
+        .v-show-case-glimpse-title {
+            font-size: 30px;
+            display: block;
+            padding: 10px;
+            text-align: center;
+        }
+        .v-show-case-glimpse-container {
+            @include k-flex-wrap(wrap);
+            .v-show-case-thumb {
+                border: 1px solid $border-color-1;
+                width: 200px;
+                max-width: 200px;
+                height: 237px;
+                cursor: pointer;
+                border-radius: 5px;
+                overflow: hidden;
+                background-color: $block-background-color;
+                margin: 3px;
+
+                &:hover {
+                    border-color: $hover-border-color;
+                }
+
+                @include k-flex-basis(220px);
+
+                .v-show-case-thumb-title {
+                    border-bottom: 1px solid $border-color-1;
+                    text-align: center;
+                    padding: 10px;
+                }
+                .v-show-case-thumb-container {
+                    .v-show-case-thumb-image {
+                        background-color: $image-background-color;
+                        background-image: url('../images/loading.gif');
+                        width: 200px;
+                        height: 200px;
+                        background-size: cover;
+                        background-position: center;
+                        background-repeat: no-repeat;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,99 @@
+@mixin app-scene-side-bar {
+    .v-side-bar {
+        display: block;
+        position: fixed;
+        bottom: 4px;
+        right: 4px;
+        width: auto;
+        max-height: 342px;
+        background-color: $menu-background-color;
+        border: 1px solid $border-color-1;
+        border-radius: 5px;
+        overflow: hidden;
+        z-index: 10;
+
+        &.v-compact {
+            height: auto !important;
+
+            .v-side-bar-controls {
+                border: none !important;
+            }
+        }
+
+        .v-side-bar-controls {
+            border-bottom: 1px solid $border-color-1;
+            @include k-flex-justify-content(flex-end);
+
+            .v-side-bar-control-button {
+                font-size: 20px;
+                display: inline-block;
+                cursor: pointer;
+                width: 40px;
+                height:40px;
+                line-height: 40px;
+                text-align: center;
+                box-sizing: border-box;
+                border: 1px solid $border-color-2;
+                border-radius: 5px;
+                position: relative;
+
+                &:hover {
+                    background-color: $hover-background-color;
+                }
+            }
+        }
+        .v-side-bar-container {
+            max-width: 160px;
+            min-width: 160px;
+            height: auto;
+            max-height: 300px;
+            overflow: hidden;
+            overflow-y: auto;
+            position:relative;
+            border-radius: 5px;
+
+            .v-side-bar-item,
+            .v-side-bar-filler{
+                height: 40px;
+                width: 100%;
+                font-size: 20px;
+                line-height: 40px;
+                text-align: center;
+                display: block;
+                cursor: pointer;
+                box-sizing: border-box;
+                border-top: 1px solid $border-color-3;
+                position: relative;
+
+                .v-icon {
+                    display: inline-block;
+                }
+
+                .v-link {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    display: block;
+                    background-color: transparent;
+                }
+
+                span {
+                    margin: 0 3px;
+                }
+
+                &:hover {
+                    background-color: $hover-background-color;
+                }
+            }
+
+            .v-side-bar-filler {
+                height:20px;
+                &:hover {
+                    background-color: transparent;
+                }
+            }
+        }
+    }
+}

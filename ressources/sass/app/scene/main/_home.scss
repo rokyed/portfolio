@@ -1,0 +1,22 @@
+@mixin app-scene-main-home {
+    .v-home-page {
+        .v-home-page-title {
+            font-size: 30px;
+            display: block;
+            padding: 10px;
+            text-align: center;
+        }
+        .v-home-page-description {
+            display: block;
+            text-align: center;
+        }
+        .v-me-image {
+            background-size: contain;
+            background-image: url('../images/full/me-compressed.png');
+            background-repeat: no-repeat;
+            background-position: center;
+            width: 100%;
+            height: 500px;
+        }
+    }
+}
