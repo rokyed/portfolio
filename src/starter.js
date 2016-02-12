@@ -19,7 +19,7 @@ window.Hycs.setUp({
     startImporting: true,
     consoleLog: false,
     //shallReloadPage: true
-    configFolderUrl: '/portfolio'
+    appFolderUrl: '/portfolio'
 });
 
 function runningNow() {
