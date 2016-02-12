@@ -7,12 +7,12 @@ window.Hyc.addBlueprint('App.Scene.SideBar', {
 
     elementData: {
         nodeType: 'div',
-        classList: ['v-side-bar','v-box-shadow-small'],
+        classList: ['v-side-bar','v-box-shadow-small','v-flex-container'],
         template: [
-            '<div class="v-side-bar-container"></div>',
             '<div class="v-side-bar-controls v-flex-container">',
                 '<div class="v-side-bar-control-button v-fontello">&#xe80f;</div>',
             '</div>',
+            '<div class="v-side-bar-container"></div>'
         ],
         values: {
         }
@@ -46,12 +46,12 @@ window.Hyc.addBlueprint('App.Scene.SideBar', {
             container.classList.remove('v-hidden');
             element.classList.remove('v-compact');
 
-            button.innerHTML = '&#xe810;';
+            button.innerHTML = '&#xe80f;';
         } else {
             container.classList.add('v-hidden');
             element.classList.add('v-compact');
 
-            button.innerHTML = '&#xe80f;';
+            button.innerHTML = '&#xe810;';
         }
     },
 
@@ -62,7 +62,7 @@ window.Hyc.addBlueprint('App.Scene.SideBar', {
 
         container.classList.add('v-hidden');
         element.classList.add('v-compact');
-        button.innerHTML = '&#xe810;';
+        button.innerHTML = '&#xe80f;';
     },
 
     cleanItems: function () {

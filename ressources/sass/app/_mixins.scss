@@ -92,6 +92,14 @@
     justify-content: $value;
 }
 
+@mixin k-flex-order ($value) {
+    -webkit-box-ordinal-group: $value;   /* OLD - iOS 6-, Safari 3.1-6 */
+    -moz-box-ordinal-group: $value;      /* OLD - Firefox 19- */
+    -ms-flex-order: $value;              /* TWEENER - IE 10 */
+    -webkit-order: $value;               /* NEW - Chrome */
+    order: $value;
+}
+
 @mixin bg-gradient-vertical {
     background: -moz-linear-gradient(top, $gradient-1a 0%, $gradient-1b 100%); /* FF3.6-15 */
     background: -webkit-linear-gradient(top, $gradient-1a 0%,$gradient-1b 100%); /* Chrome10-25,Safari5.1-6 */

@@ -209,10 +209,12 @@ html, body {
 
 /* line 2, ../sass/app/scene/_side-bar.scss */
 .v-side-bar {
-  display: block;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   position: fixed;
-  bottom: 4px;
-  right: 4px;
+  top: 4px;
+  left: 4px;
   width: auto;
   max-height: 342px;
   background-color: #f8f6eb;
@@ -222,21 +224,38 @@ html, body {
   z-index: 10;
 }
 /* line 15, ../sass/app/scene/_side-bar.scss */
+.v-mobile .v-side-bar {
+  top: auto;
+  bottom: 4px;
+}
+/* line 20, ../sass/app/scene/_side-bar.scss */
 .v-side-bar.v-compact {
   height: auto !important;
 }
-/* line 18, ../sass/app/scene/_side-bar.scss */
+/* line 23, ../sass/app/scene/_side-bar.scss */
 .v-side-bar.v-compact .v-side-bar-controls {
   border: none !important;
 }
-/* line 23, ../sass/app/scene/_side-bar.scss */
+/* line 28, ../sass/app/scene/_side-bar.scss */
 .v-side-bar .v-side-bar-controls {
   border-bottom: 1px solid rgba(0, 0, 0, 0.06);
-  -webkit-justify-content: flex-end;
-  -ms-flex-pack: flex-end;
-  justify-content: flex-end;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: flex-start;
+  justify-content: flex-start;
 }
-/* line 27, ../sass/app/scene/_side-bar.scss */
+/* line 31, ../sass/app/scene/_side-bar.scss */
+.v-mobile .v-side-bar .v-side-bar-controls {
+  -webkit-box-ordinal-group: 2;
+  /* OLD - iOS 6-, Safari 3.1-6 */
+  -moz-box-ordinal-group: 2;
+  /* OLD - Firefox 19- */
+  -ms-flex-order: 2;
+  /* TWEENER - IE 10 */
+  -webkit-order: 2;
+  /* NEW - Chrome */
+  order: 2;
+}
+/* line 34, ../sass/app/scene/_side-bar.scss */
 .v-side-bar .v-side-bar-controls .v-side-bar-control-button {
   font-size: 20px;
   display: inline-block;
@@ -250,11 +269,11 @@ html, body {
   border-radius: 5px;
   position: relative;
 }
-/* line 40, ../sass/app/scene/_side-bar.scss */
+/* line 47, ../sass/app/scene/_side-bar.scss */
 .v-side-bar .v-side-bar-controls .v-side-bar-control-button:hover {
   background-color: rgba(100, 155, 255, 0.3);
 }
-/* line 45, ../sass/app/scene/_side-bar.scss */
+/* line 52, ../sass/app/scene/_side-bar.scss */
 .v-side-bar .v-side-bar-container {
   max-width: 160px;
   min-width: 160px;
@@ -265,7 +284,7 @@ html, body {
   position: relative;
   border-radius: 5px;
 }
-/* line 56, ../sass/app/scene/_side-bar.scss */
+/* line 63, ../sass/app/scene/_side-bar.scss */
 .v-side-bar .v-side-bar-container .v-side-bar-item,
 .v-side-bar .v-side-bar-container .v-side-bar-filler {
   height: 40px;
@@ -279,12 +298,12 @@ html, body {
   border-top: 1px solid rgba(255, 255, 255, 0.6);
   position: relative;
 }
-/* line 68, ../sass/app/scene/_side-bar.scss */
+/* line 75, ../sass/app/scene/_side-bar.scss */
 .v-side-bar .v-side-bar-container .v-side-bar-item .v-icon,
 .v-side-bar .v-side-bar-container .v-side-bar-filler .v-icon {
   display: inline-block;
 }
-/* line 72, ../sass/app/scene/_side-bar.scss */
+/* line 79, ../sass/app/scene/_side-bar.scss */
 .v-side-bar .v-side-bar-container .v-side-bar-item .v-link,
 .v-side-bar .v-side-bar-container .v-side-bar-filler .v-link {
   position: absolute;
@@ -295,21 +314,21 @@ html, body {
   display: block;
   background-color: transparent;
 }
-/* line 82, ../sass/app/scene/_side-bar.scss */
+/* line 89, ../sass/app/scene/_side-bar.scss */
 .v-side-bar .v-side-bar-container .v-side-bar-item span,
 .v-side-bar .v-side-bar-container .v-side-bar-filler span {
   margin: 0 3px;
 }
-/* line 86, ../sass/app/scene/_side-bar.scss */
+/* line 93, ../sass/app/scene/_side-bar.scss */
 .v-side-bar .v-side-bar-container .v-side-bar-item:hover,
 .v-side-bar .v-side-bar-container .v-side-bar-filler:hover {
   background-color: rgba(100, 155, 255, 0.3);
 }
-/* line 91, ../sass/app/scene/_side-bar.scss */
+/* line 98, ../sass/app/scene/_side-bar.scss */
 .v-side-bar .v-side-bar-container .v-side-bar-filler {
   height: 20px;
 }
-/* line 93, ../sass/app/scene/_side-bar.scss */
+/* line 100, ../sass/app/scene/_side-bar.scss */
 .v-side-bar .v-side-bar-container .v-side-bar-filler:hover {
   background-color: transparent;
 }
