@@ -18,7 +18,7 @@ window.Hycs.setUp({
     callbackDelay: 100,
     startImporting: true,
     consoleLog: false,
-    //appFolderUrl: '/portfolio'
+    appFolderUrl: '/portfolio'
 });
 
 function runningNow() {
