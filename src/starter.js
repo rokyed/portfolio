@@ -22,7 +22,7 @@ window.Hycs.setUp({
 });
 
 function runningNow() {
-    console.time('Application intitialization time');
+    //console.time('Application intitialization time');
     // do something when all scripts loaded
     window['appInstance'] = window.Hyc.getInstance(window.Hyc.makeInstance({
         blueprint: 'App.App'
@@ -30,5 +30,5 @@ function runningNow() {
     window['appInstance'].setData(window['portfolio-data']);
     window['appInstance'].initialize();
 
-    console.timeEnd('Application intitialization time');
+    //console.timeEnd('Application intitialization time');
 }
